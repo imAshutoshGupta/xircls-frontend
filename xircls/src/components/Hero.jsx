@@ -65,11 +65,11 @@ const Hero = () => {
                         onSlideChange={() => console.log('slide change')}
                     >
                         <SwiperSlide><img src={hammer} width={180} alt="brandlogo" /></SwiperSlide>
-                        <SwiperSlide><img src={leaf} width={180} alt="brandlogo"/></SwiperSlide>
-                        <SwiperSlide><img src={pvr} width={180} alt="brandlogo"/></SwiperSlide>
-                        <SwiperSlide><img src={rebelfoods} width={180} alt="brandlogo"/></SwiperSlide>
-                        <SwiperSlide><img src={snitch} width={180} alt="brandlogo"/></SwiperSlide>
-                        <SwiperSlide><img src={trueelements} width={180} alt="brandlogo"/></SwiperSlide>
+                        <SwiperSlide><img src={leaf} width={180} alt="brandlogo" /></SwiperSlide>
+                        <SwiperSlide><img src={pvr} width={180} alt="brandlogo" /></SwiperSlide>
+                        <SwiperSlide><img src={rebelfoods} width={180} alt="brandlogo" /></SwiperSlide>
+                        <SwiperSlide><img src={snitch} width={180} alt="brandlogo" /></SwiperSlide>
+                        <SwiperSlide><img src={trueelements} width={180} alt="brandlogo" /></SwiperSlide>
                     </Swiper>
                 </div>
             </div>
@@ -97,9 +97,11 @@ const Hero = () => {
                 <div className="col-md-6 col-lg-4">
                     <div className='mt-2 mt-md-3 p-2'>
                         {items.map((item) => (
-                            <div>
-                                <h2 className='fw-bold'>{item.title1}</h2>
-                                <h4 className='fw-lighter'>{item.data1}</h4>
+                            <div className='row'>
+                                <div className='row'>
+                                    <h2 className='fw-bold'>{item.title1}</h2>
+                                    <h4 className='fw-lighter'>{item.data1}</h4>
+                                </div>
                             </div>
                         ))}
                     </div>
